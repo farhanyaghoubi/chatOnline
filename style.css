@@ -1,0 +1,75 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+#main-container{
+	max-width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(blue,purple);
+	padding-top: 50px;
+}
+#register{
+	width: 90%;
+	text-align: center;
+	margin: 0 auto;
+}
+#register h1{
+	display: inline-block;
+	margin-bottom: 50px;
+	color: white;
+	fonr-size: white;	
+	font-size: 18px;
+	color: rgba(255,255,255,0.7);
+}
+#register h3{
+	color: white;
+	cursor: pointer;
+	font-size: 30px;
+}
+#register-form input[type="text"], #register-form input[type="text"]{
+	display: block;
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 20px;
+	padding: 10px 15px;
+	border-radius: 7px;
+	border: none;
+	background-color: rgba(255,255,255,0.3);	
+	box-shadow: 2px 4px 8px rgba(0,0,0,0.5);
+	color: white;
+	transition: 0.5s;
+}
+#register-form input[type="text"]:hover, #register-form input[type="text"]:hover{
+	background-color: rgba(255,255,255,1);
+	color: black;
+}
+#register-form input[type="submit"]{
+	padding: 10px;
+	font-weight: bold;
+	background-color: white;
+	border-radius: 12px;
+	border: none;
+	color: blue;
+	cursor: pointer;
+	transition: 0.5s;
+	font-size: 15px;
+	box-shadow: 2px 4px 8px rgba(0,0,0,0.4);
+}
+#register-form input[type="submit"]:hover{
+	background-color: blue;
+	color: white;
+}
+#register-form a{
+	display: block;
+	margin: 20px 0;
+	font-size: 12px;
+	color: white;
+	cursor: pointer;
+}
+@media only screen and (min-width: 650px){
+	#register{
+		width: 50%;
+	}
+}
