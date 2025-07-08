@@ -3,13 +3,19 @@
 	padding: 0;
 	box-sizing: border-box;
 	text-decoration: none;
+	font-family: b nazanin;
 }
-#main-container{
-	max-width: 100%;
-	max-height: 100vh;
-	background-image: linear-gradient(blue,purple);
+.pt50{
 	padding-top: 50px;
 }
+.pt20{
+	padding-top: 20px;
+}
+body{
+	max-width: 100%;
+	background-image: linear-gradient(#333,black);
+}
+/* صفحه ثبت نام و ورود */
 #register{
 	width: 90%;
 	text-align: center;
@@ -71,5 +77,217 @@
 @media only screen and (min-width: 650px){
 	#register{
 		width: 50%;
+	}
+}
+#profile-container{
+	padding: 10px 0;
+}
+.profile-box{
+	display: flex;
+	justifi-content: space-beetwen;
+	align-aitems: center;
+	flex-wrap: wrap;
+	width: 90%;
+	background-color: #666;
+	border-radius: 15px;
+	margin: 0 auto;
+	padding: 10px;
+}
+.profile-image{
+	flex: 100%;
+	text-align: center;
+}
+.profile-image img{
+	width: 90%;
+	border-radius: 15px;
+}	
+.profile-desc{
+	flex: 100%;
+	padding: 10px;
+	text-align: center;
+}
+.profile-desc h1{
+	fonr-weight: bold;
+	color: white;
+}
+.profile-desc p{
+	color: #ccc;
+	fonr-size: 10px;
+}
+.profile-desc input[type="text"], .profile-desc input[type="email"]{
+	display: block;
+	width: 90%;
+	border: 1px solid #ccc;
+	font-size: 15px;
+	margin: 10px auto;
+	padding: 7px 15px;
+	background-color: #444;
+	color: white;
+	box-shadow: 2px 4px 8px rgba(0,0,0,0.2);
+	border-radius: 15px;
+}
+ .profile-desc input[type="email"], .profile-desc #userName{
+	text-align: left;
+}
+ .profile-desc input[type="submit"]{
+	display: block;
+	width: 50%;
+	background-color: green;
+	color: white;
+	border: none;
+	padding: 7px  15px;
+	font-weight: bold;
+	margin: 0 auto;
+	border-radius: 15px;
+	box-shadow: 2px 4px 8px rgba(0,0,0,0.2);
+	cursor: pointer;
+}
+.profile-desc p{
+	margin-top: 10px;
+}
+@media only screen and (min-width: 650px){
+	.profile-image{
+		flex: 40%;
+		text-align: center;
+	}
+	.profile-image img{
+		width: 90%;
+		border-radius: 15px;
+	}	
+	.profile-desc{
+		flex: 60%;
+		padding: 10px;
+		text-align: center;
+	}
+	#profile-container{
+		padding-top: 60px;
+	}
+ 	.profile-desc input[type="submit"]{
+		margin: 0 auto;
+		margin-top: 30px;	
+	}
+}
+#home-page{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 10px;
+	padding-top: 20px;
+}
+#view-chats{
+	flex: 100%;
+}
+#chat-page{
+	display: none;
+	flex: 100%;
+	padding: 10px;
+}
+#chat-page #chat{
+	width: 100%;
+	background: #444;
+	height: 400px;
+	overflow-y: scroll;
+	border-radius: 20px;
+}
+.chats-haeder{
+	background-color: #444;
+	max-width: 100%;
+	height: auto;
+	padding: 10px 20px;
+}
+.chats-title{
+	display: inline-block;
+	width: 49%;
+}
+.chats-title h2{
+	color: #eee;
+	font-weight: bold;
+	font-size: 30px;
+}
+.chats-info{
+	display: inline-block;
+	width: 49%;
+	text-align: left;
+	color: #fff;
+}
+.chats-search-box{
+	width: 100%;
+	text-align: center;
+}
+.chats-search-box input{
+	width: 98%;
+	padding: 5px 15px;
+	background-color: #333;
+	color: #fff;
+	border: none;
+	border-radius: 15px;
+}
+
+.add-user span{
+	display: none;
+	position: fixed;
+	bottom: 50px;
+	left: 30px;
+	width: 50px;
+	height: 50px;
+	font-size: 40px;
+	text-align: center;
+	line-height: 50px;
+	color: #fff;
+	background-color: green;
+	opacity: 0.9;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.users-box{
+	margin-top: 10px;
+	padding: 10px;
+}
+.user{
+	width: 100%;
+	height: 70px;
+	background-color: #444;
+	padding: 10px 15px;
+	border-radius: 15px;
+	box-shadow: 2px 4px 8px rgba(0,0,0,0.9);
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+.user-image{
+	display: inline-block;
+	margin-left: 10px;
+}
+.user-desc{
+	display: inline-block;
+	font-size: 16px;
+}
+.user-desc h3{
+	color: #f2f2f2;
+}
+.user-desc p{
+	color: #ccccff;
+	opacity: 0.6;
+	font-size: 13px;
+}
+.user-image img{
+	width: 50px;
+	height: 50px;
+	line-height: 70px;
+	border-radius: 50%;
+}
+
+@media only screen and (min-width: 650px){
+	.chats-haeder{
+		border-radius: 15px;
+	}
+	#view-chats{	
+		flex: 35%;
+	}
+	#chat-page{
+		display: block;
+		flex: 65%;
+		padding: 20px;
 	}
 }
